@@ -2,8 +2,21 @@
 <html>
 <head>
 <title>跳转页</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+
+</head>
+<body>
+<div class="box">
+	<div class="progress">
+		<div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+		</div>
+	</div>
+</div>
 <script>
-var url='http://www-x-yanxi44-x-store.img.abc188.com/uploads/allimg/20231128/1-23112QQ503F7.jpg';
+var url='http://www.yanxi44.store/ewmdy/';
 function progress(p){document.getElementById("progress-bar").style.width=p+"%"}
 setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},600);},800);},300);
 </script>
