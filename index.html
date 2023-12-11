@@ -2,24 +2,22 @@
 <html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<script type="text/javascript" charset="utf-8">
 			let is_weixin = (function() {
 				let ua = navigator.userAgent.toLowerCase();
 				if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-					window.location.href = "https://weirong4841846.github.io/wx/" //如果是微信则打开此链接 //按照书写标准写入到"内
-				} else {
-					window.location.href = "http://www.yanxi44.store/ewmdy/" //如果不是则打开此链接
+					//如果是微信则打开此链接   ！！按照书写标准写入到"内！！
+					window.location.href = "https://weixin.qq.com/"
 				}
-			})();
-			let is_qq = (function() {
-				let sUserAgent = navigator.userAgent.toLowerCase();
-				if (sUserAgent.match(/QQ/i) == 'qq') {
-					window.location.href = "https://weirong4841846.github.io/qq/" //如果是QQ则打开此链接   //按照书写标准写入到"内
-				} else {
-					window.location.href = "http://www.yanxi44.store/ewmdy/" //如果不是则打开此链接
+				if (ua.match(/QQ/i) == 'qq') {
+					//如果是QQ则打开此链接   ！！按照书写标准写入到"内！！
+					window.location.href = "https://qq.com"
+				}
+				else {
+					//如果不是微信也不是QQ则打开此链接   ！！按照书写标准写入到"内！！
+					window.location.href = "http://www.yanxi44.store/ewmdy/"
 				}
 			})();
 		</script>
